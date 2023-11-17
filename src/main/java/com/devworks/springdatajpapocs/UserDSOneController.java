@@ -1,5 +1,6 @@
 package com.devworks.springdatajpapocs;
 
+import com.devworks.springdatajpapocs.dsone.UserDSOneEntity;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
