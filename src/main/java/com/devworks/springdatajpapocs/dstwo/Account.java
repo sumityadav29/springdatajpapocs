@@ -1,4 +1,4 @@
-package com.devworks.springdatajpapocs.dsone;
+package com.devworks.springdatajpapocs.dstwo;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -9,11 +9,10 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class UserDSOneEntity {
+public class Account {
 
     @Id
     @GeneratedValue
     private Long id;
     private String name;
-    private String email;
 }

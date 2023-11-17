@@ -1,6 +1,6 @@
 package com.devworks.springdatajpapocs;
 
-import com.devworks.springdatajpapocs.dstwo.AccountEntity;
+import com.devworks.springdatajpapocs.dstwo.Account;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,8 +17,8 @@ public class AccountController {
     }
 
     @GetMapping("/accounts")
-    public ResponseEntity<List<AccountEntity>> getAccounts() {
-        List<AccountEntity> accountEntities = accountRepository.findAll();
+    public ResponseEntity<List<Account>> getAccounts() {
+        List<Account> accountEntities = accountRepository.findAll();
         return ResponseEntity.ok(accountEntities);
     }
 

@@ -1,6 +1,6 @@
 package com.devworks.springdatajpapocs;
 
-import com.devworks.springdatajpapocs.dsone.UserDSOneEntity;
+import com.devworks.springdatajpapocs.dsone.User;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,8 +19,8 @@ public class UserDSOneController {
     }
 
     @GetMapping("/users")
-    public ResponseEntity<List<UserDSOneEntity>> getUsers() {
-        List<UserDSOneEntity> users = userDSOneRepository.findAll();
+    public ResponseEntity<List<User>> getUsers() {
+        List<User> users = userDSOneRepository.findAll();
         return ResponseEntity.ok(users);
     }
 
