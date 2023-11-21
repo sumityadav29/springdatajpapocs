@@ -1,4 +1,4 @@
-package com.devworks.springdatajpapocs;
+package com.devworks.springdatajpapocs.dstwo;
 
 import com.devworks.springdatajpapocs.dstwo.Account;
 import org.springframework.data.repository.ListCrudRepository;
